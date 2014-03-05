@@ -1,0 +1,13 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Zester_Tool\Properties\NewProjectConfig.cs">
+    <Files>
+      <File FileName="Zester_Tool\Properties\MainMenu.cs" Line="16" Column="1" />
+      <File FileName="Zester_Tool\Properties\NewProjectConfig.cs" Line="32" Column="23" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

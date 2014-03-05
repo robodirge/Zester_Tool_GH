@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zester_Tool", "Zester_Tool\Zester_Tool.csproj", "{A12D4353-AE73-4B34-AA13-F6267B1FD6BE}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "Zester_Tool_Packager", "Zester_Tool_Packager\Zester_Tool_Packager.mdproj", "{1FCD1572-6855-469F-80D5-4F1ABB9AD33D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FCD1572-6855-469F-80D5-4F1ABB9AD33D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1FCD1572-6855-469F-80D5-4F1ABB9AD33D}.Release|x86.ActiveCfg = Release|Any CPU
+		{A12D4353-AE73-4B34-AA13-F6267B1FD6BE}.Debug|x86.ActiveCfg = Debug|x86
+		{A12D4353-AE73-4B34-AA13-F6267B1FD6BE}.Debug|x86.Build.0 = Debug|x86
+		{A12D4353-AE73-4B34-AA13-F6267B1FD6BE}.Release|x86.ActiveCfg = Release|x86
+		{A12D4353-AE73-4B34-AA13-F6267B1FD6BE}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Zester_Tool\Zester_Tool.csproj
+	EndGlobalSection
+EndGlobal

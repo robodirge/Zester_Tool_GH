@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ItemType>PackagingProject</ItemType>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1FCD1572-6855-469F-80D5-4F1ABB9AD33D}</ProjectGuid>
+    <Packages>
+      <Packages>
+        <Package name="Zester_Tool">
+          <Builder targetFile="..\..\..\delete me\Zester_DeleteMe\Zester_Tool_Package#1.tar" platform="Windows" configuration="Debug|x86" ctype="BinariesZipPackageBuilder">
+            <ExcludedFiles>
+              <File>Zester_Tool,ProgramFiles,Zester_Tool.pdb</File>
+            </ExcludedFiles>
+            <RootEntry path="..\Zester_Tool\Zester_Tool.csproj" />
+          </Builder>
+        </Package>
+      </Packages>
+    </Packages>
+  </PropertyGroup>
+</Project>
