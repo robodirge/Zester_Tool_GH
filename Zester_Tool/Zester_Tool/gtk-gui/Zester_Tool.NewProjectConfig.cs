@@ -79,7 +79,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox1_Label1 = new global::Gtk.Label ();
 			this.ZT_SubVBox1_Label1.Name = "ZT_SubVBox1_Label1";
 			this.ZT_SubVBox1_Label1.Xalign = 0.02F;
-			this.ZT_SubVBox1_Label1.LabelProp = global::Mono.Unix.Catalog.GetString ("*Client name:");
+			this.ZT_SubVBox1_Label1.LabelProp = global::Mono.Unix.Catalog.GetString ("*Client name: (50 Character limit)");
 			this.ZT_SubVBox1.Add (this.ZT_SubVBox1_Label1);
 			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox1 [this.ZT_SubVBox1_Label1]));
 			w1.Position = 0;
@@ -90,6 +90,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox1_Entry1.CanFocus = true;
 			this.ZT_SubVBox1_Entry1.Name = "ZT_SubVBox1_Entry1";
 			this.ZT_SubVBox1_Entry1.IsEditable = true;
+			this.ZT_SubVBox1_Entry1.MaxLength = 50;
 			this.ZT_SubVBox1_Entry1.InvisibleChar = '●';
 			this.ZT_SubVBox1.Add (this.ZT_SubVBox1_Entry1);
 			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox1 [this.ZT_SubVBox1_Entry1]));
@@ -109,7 +110,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox2_Label1 = new global::Gtk.Label ();
 			this.ZT_SubVBox2_Label1.Name = "ZT_SubVBox2_Label1";
 			this.ZT_SubVBox2_Label1.Xalign = 0.02F;
-			this.ZT_SubVBox2_Label1.LabelProp = global::Mono.Unix.Catalog.GetString ("*Project name:");
+			this.ZT_SubVBox2_Label1.LabelProp = global::Mono.Unix.Catalog.GetString ("*Project name: (50 Character limit)");
 			this.ZT_SubVBox2.Add (this.ZT_SubVBox2_Label1);
 			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox2 [this.ZT_SubVBox2_Label1]));
 			w4.Position = 0;
@@ -120,6 +121,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox2_Entry1.CanFocus = true;
 			this.ZT_SubVBox2_Entry1.Name = "ZT_SubVBox2_Entry1";
 			this.ZT_SubVBox2_Entry1.IsEditable = true;
+			this.ZT_SubVBox2_Entry1.MaxLength = 50;
 			this.ZT_SubVBox2_Entry1.InvisibleChar = '●';
 			this.ZT_SubVBox2.Add (this.ZT_SubVBox2_Entry1);
 			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox2 [this.ZT_SubVBox2_Entry1]));
@@ -458,7 +460,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox7_Label1.HeightRequest = 30;
 			this.ZT_SubVBox7_Label1.Name = "ZT_SubVBox7_Label1";
 			this.ZT_SubVBox7_Label1.Xalign = 0.02F;
-			this.ZT_SubVBox7_Label1.LabelProp = global::Mono.Unix.Catalog.GetString ("*Date Tested");
+			this.ZT_SubVBox7_Label1.LabelProp = global::Mono.Unix.Catalog.GetString ("*Date Tested (30 Character limit)");
 			this.ZT_SubVBox7.Add (this.ZT_SubVBox7_Label1);
 			global::Gtk.Box.BoxChild w40 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox7 [this.ZT_SubVBox7_Label1]));
 			w40.Position = 0;
@@ -469,6 +471,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox7_Entry1.CanFocus = true;
 			this.ZT_SubVBox7_Entry1.Name = "ZT_SubVBox7_Entry1";
 			this.ZT_SubVBox7_Entry1.IsEditable = true;
+			this.ZT_SubVBox7_Entry1.MaxLength = 30;
 			this.ZT_SubVBox7_Entry1.InvisibleChar = '●';
 			this.ZT_SubVBox7.Add (this.ZT_SubVBox7_Entry1);
 			global::Gtk.Box.BoxChild w41 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox7 [this.ZT_SubVBox7_Entry1]));

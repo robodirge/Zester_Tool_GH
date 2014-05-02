@@ -141,32 +141,27 @@ namespace Zester_Tool{
 		//Next button
 		protected void OnZTSubVBox8Button2Clicked (object sender, EventArgs e){
 			if(ZT_SubVBox1_Entry1.Text == ""){
-				sErrorLog += (@"Client name is missing.
-");
+				sErrorLog += ("Client name is missing.\r\n");
 				iErrorLog++;
 			}
 
 			if(ZT_SubVBox2_Entry1.Text == ""){
-				sErrorLog += (@"Project name is missing.
-");
+				sErrorLog += ("Project name is missing.\r\n");
 				iErrorLog++;
 			}
 
 			if((ZT_SubVBox3_Radio1.Active == true)&&(ZT_SubVBox3_TextView1.Buffer.Text == "")){
-				sErrorLog += (@"URL used is missing.
-");
+				sErrorLog += ("URL used is missing.\r\n");
 				iErrorLog++;
 			}
 
 			if((ZT_SubVBox4_Radio1.Active == true)&&(ZT_SubVBox4_TextView1.Buffer.Text == "")){
-				sErrorLog += (@"Version/Build number is missing.
-");
+				sErrorLog += ("Version/Build number is missing.\r\n");
 				iErrorLog++;
 			}
 
 			if(ZT_SubVBox7_Entry1.Text == ""){
-				sErrorLog += (@"Please enter a date of testing.
-");
+				sErrorLog += ("Please enter a date of testing.\r\n");
 				iErrorLog++;
 			}
 
@@ -175,8 +170,7 @@ namespace Zester_Tool{
 				(!ZT_SubVBox5_Tick3.Active)&&
 				(!ZT_SubVBox5_Tick4.Active)&&
 				(!ZT_SubVBox5_Tick5.Active)){
-				sErrorLog += (@"Please select at least 1 testing activity.
-");
+				sErrorLog += ("Please select at least 1 testing activity.\r\n");
 				iErrorLog++;
 			}
 
@@ -185,9 +179,7 @@ namespace Zester_Tool{
 					DialogFlags.Modal,
 					MessageType.Warning,
 					ButtonsType.Ok,
-					(@"Error(s): " + iErrorLog + @"
-
-	" +sErrorLog));
+					(@"Error count: " + iErrorLog + "\n\n" +sErrorLog));
 
 
 				ErrorMessage.Title= "Error Log";
@@ -201,7 +193,14 @@ namespace Zester_Tool{
 				bNextSection = true;
 			}
 
-			if(bNextSection){}
+			if(bNextSection){
+
+				//Save data to config file
+
+				Destroy();
+				Zester_Tool.EnvironmentChooser EC = new Zester_Tool.EnvironmentChooser();
+				EC.Show ();
+			}
 			//Launch environment chooser section
 		}
 	}

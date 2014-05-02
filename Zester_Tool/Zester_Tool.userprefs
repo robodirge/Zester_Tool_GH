@@ -1,13 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Zester_Tool\Properties\NewProjectConfig.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Zester_Tool\Properties\EnvironmentChooser.cs">
     <Files>
-      <File FileName="Zester_Tool\Properties\MainMenu.cs" Line="16" Column="1" />
-      <File FileName="Zester_Tool\Properties\NewProjectConfig.cs" Line="32" Column="23" />
+      <File FileName="Zester_Tool\Properties\MainMenu.cs" Line="1" Column="1" />
+      <File FileName="Zester_Tool\Properties\NewProjectConfig.cs" Line="3" Column="1" />
+      <File FileName="Zester_Tool\Properties\EnvironmentChooser.cs" Line="111" Column="59" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="Zester_Tool\Properties\EnvironmentChooser.cs" line="30" offsetX="836" offsetY="408" expression="TV_EnviroTree" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>
