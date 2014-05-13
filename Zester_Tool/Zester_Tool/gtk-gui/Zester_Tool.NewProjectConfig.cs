@@ -284,7 +284,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox5_Tick1 = new global::Gtk.CheckButton ();
 			this.ZT_SubVBox5_Tick1.CanFocus = true;
 			this.ZT_SubVBox5_Tick1.Name = "ZT_SubVBox5_Tick1";
-			this.ZT_SubVBox5_Tick1.Label = global::Mono.Unix.Catalog.GetString ("Scripting / Planning?");
+			this.ZT_SubVBox5_Tick1.Label = global::Mono.Unix.Catalog.GetString ("Scripting / Planning");
 			this.ZT_SubVBox5_Tick1.DrawIndicator = true;
 			this.ZT_SubVBox5_Tick1.UseUnderline = true;
 			this.ZT_SubVBox5_HBox1.Add (this.ZT_SubVBox5_Tick1);
@@ -294,7 +294,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox5_Tick2 = new global::Gtk.CheckButton ();
 			this.ZT_SubVBox5_Tick2.CanFocus = true;
 			this.ZT_SubVBox5_Tick2.Name = "ZT_SubVBox5_Tick2";
-			this.ZT_SubVBox5_Tick2.Label = global::Mono.Unix.Catalog.GetString ("Cross environments?");
+			this.ZT_SubVBox5_Tick2.Label = global::Mono.Unix.Catalog.GetString ("Cross environments");
 			this.ZT_SubVBox5_Tick2.DrawIndicator = true;
 			this.ZT_SubVBox5_Tick2.UseUnderline = true;
 			this.ZT_SubVBox5_HBox1.Add (this.ZT_SubVBox5_Tick2);
@@ -304,7 +304,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox5_Tick3 = new global::Gtk.CheckButton ();
 			this.ZT_SubVBox5_Tick3.CanFocus = true;
 			this.ZT_SubVBox5_Tick3.Name = "ZT_SubVBox5_Tick3";
-			this.ZT_SubVBox5_Tick3.Label = global::Mono.Unix.Catalog.GetString ("Test execution?");
+			this.ZT_SubVBox5_Tick3.Label = global::Mono.Unix.Catalog.GetString ("Test execution");
 			this.ZT_SubVBox5_Tick3.DrawIndicator = true;
 			this.ZT_SubVBox5_Tick3.UseUnderline = true;
 			this.ZT_SubVBox5_HBox1.Add (this.ZT_SubVBox5_Tick3);
@@ -324,7 +324,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox5_Tick4.WidthRequest = 202;
 			this.ZT_SubVBox5_Tick4.CanFocus = true;
 			this.ZT_SubVBox5_Tick4.Name = "ZT_SubVBox5_Tick4";
-			this.ZT_SubVBox5_Tick4.Label = global::Mono.Unix.Catalog.GetString ("Retests / IVs?");
+			this.ZT_SubVBox5_Tick4.Label = global::Mono.Unix.Catalog.GetString ("Retests / IVs");
 			this.ZT_SubVBox5_Tick4.DrawIndicator = true;
 			this.ZT_SubVBox5_Tick4.UseUnderline = true;
 			this.ZT_SubVBox5_HBox2.Add (this.ZT_SubVBox5_Tick4);
@@ -335,7 +335,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox5_Tick5 = new global::Gtk.CheckButton ();
 			this.ZT_SubVBox5_Tick5.CanFocus = true;
 			this.ZT_SubVBox5_Tick5.Name = "ZT_SubVBox5_Tick5";
-			this.ZT_SubVBox5_Tick5.Label = global::Mono.Unix.Catalog.GetString ("Test support?");
+			this.ZT_SubVBox5_Tick5.Label = global::Mono.Unix.Catalog.GetString ("Test support");
 			this.ZT_SubVBox5_Tick5.DrawIndicator = true;
 			this.ZT_SubVBox5_Tick5.UseUnderline = true;
 			this.ZT_SubVBox5_HBox2.Add (this.ZT_SubVBox5_Tick5);

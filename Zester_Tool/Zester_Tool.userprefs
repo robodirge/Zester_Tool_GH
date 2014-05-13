@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Zester_Tool\Properties\EnvironmentChooser.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Zester_Tool\Properties\NewProjectConfig.cs">
     <Files>
       <File FileName="Zester_Tool\Properties\MainMenu.cs" Line="1" Column="1" />
-      <File FileName="Zester_Tool\Properties\NewProjectConfig.cs" Line="3" Column="1" />
-      <File FileName="Zester_Tool\Properties\EnvironmentChooser.cs" Line="111" Column="59" />
+      <File FileName="Zester_Tool\Properties\NewProjectConfig.cs" Line="150" Column="17" />
+      <File FileName="Zester_Tool\Properties\EnvironmentChooser.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

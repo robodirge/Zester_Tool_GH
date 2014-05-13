@@ -410,6 +410,7 @@
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
                     <property name="Label" translatable="yes">Yes</property>
+                    <property name="Active">True</property>
                     <property name="DrawIndicator">True</property>
                     <property name="HasLabel">True</property>
                     <property name="UseUnderline">True</property>
@@ -501,6 +502,7 @@
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
                     <property name="Label" translatable="yes">Yes</property>
+                    <property name="Active">True</property>
                     <property name="DrawIndicator">True</property>
                     <property name="HasLabel">True</property>
                     <property name="UseUnderline">True</property>
@@ -591,7 +593,7 @@
                   <widget class="Gtk.CheckButton" id="ZT_SubVBox5_Tick1">
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
-                    <property name="Label" translatable="yes">Scripting / Planning?</property>
+                    <property name="Label" translatable="yes">Scripting / Planning</property>
                     <property name="DrawIndicator">True</property>
                     <property name="HasLabel">True</property>
                     <property name="UseUnderline">True</property>
@@ -605,7 +607,7 @@
                   <widget class="Gtk.CheckButton" id="ZT_SubVBox5_Tick2">
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
-                    <property name="Label" translatable="yes">Cross environments?</property>
+                    <property name="Label" translatable="yes">Cross environments</property>
                     <property name="DrawIndicator">True</property>
                     <property name="HasLabel">True</property>
                     <property name="UseUnderline">True</property>
@@ -619,7 +621,7 @@
                   <widget class="Gtk.CheckButton" id="ZT_SubVBox5_Tick3">
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
-                    <property name="Label" translatable="yes">Test execution?</property>
+                    <property name="Label" translatable="yes">Test execution</property>
                     <property name="DrawIndicator">True</property>
                     <property name="HasLabel">True</property>
                     <property name="UseUnderline">True</property>
@@ -646,7 +648,7 @@
                     <property name="MemberName" />
                     <property name="WidthRequest">202</property>
                     <property name="CanFocus">True</property>
-                    <property name="Label" translatable="yes">Retests / IVs?</property>
+                    <property name="Label" translatable="yes">Retests / IVs</property>
                     <property name="DrawIndicator">True</property>
                     <property name="HasLabel">True</property>
                     <property name="UseUnderline">True</property>
@@ -661,7 +663,7 @@
                   <widget class="Gtk.CheckButton" id="ZT_SubVBox5_Tick5">
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
-                    <property name="Label" translatable="yes">Test support?</property>
+                    <property name="Label" translatable="yes">Test support</property>
                     <property name="DrawIndicator">True</property>
                     <property name="HasLabel">True</property>
                     <property name="UseUnderline">True</property>
