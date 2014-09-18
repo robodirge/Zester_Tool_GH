@@ -5,52 +5,99 @@ namespace Zester_Tool
 	public partial class NewProjectConfig
 	{
 		private global::Gtk.VBox ZT_MainVBox1;
+		
 		private global::Gtk.VBox ZT_SubVBox1;
+		
 		private global::Gtk.Label ZT_SubVBox1_Label1;
+		
 		private global::Gtk.Entry ZT_SubVBox1_Entry1;
+		
 		private global::Gtk.VBox ZT_SubVBox2;
+		
 		private global::Gtk.Label ZT_SubVBox2_Label1;
+		
 		private global::Gtk.Entry ZT_SubVBox2_Entry1;
+		
 		private global::Gtk.VBox ZT_SubVBox3;
+		
 		private global::Gtk.HBox ZT_SubVBox3_HBox1;
+		
 		private global::Gtk.Label ZT_SubVBox3_Label1;
+		
 		private global::Gtk.RadioButton ZT_SubVBox3_Radio1;
+		
 		private global::Gtk.RadioButton ZT_SubVBox3_Radio2;
+		
 		private global::Gtk.ScrolledWindow ZT_SubVBox3_Scrolled1;
+		
 		private global::Gtk.TextView ZT_SubVBox3_TextView1;
+		
 		private global::Gtk.VBox ZT_SubVBox4;
+		
 		private global::Gtk.HBox ZT_SubVBox4_HBox1;
+		
 		private global::Gtk.Label ZT_SubVBox4_Label1;
+		
 		private global::Gtk.RadioButton ZT_SubVBox4_Radio1;
+		
 		private global::Gtk.RadioButton ZT_SubVBox4_Radio2;
+		
 		private global::Gtk.ScrolledWindow ZT_SubVBox4_Scrolled1;
+		
 		private global::Gtk.TextView ZT_SubVBox4_TextView1;
+		
 		private global::Gtk.VBox ZT_SubVBox5;
+		
 		private global::Gtk.Label ZT_SubVBox5_Label1;
+		
 		private global::Gtk.HBox ZT_SubVBox5_HBox1;
+		
 		private global::Gtk.CheckButton ZT_SubVBox5_Tick1;
+		
 		private global::Gtk.CheckButton ZT_SubVBox5_Tick2;
+		
 		private global::Gtk.CheckButton ZT_SubVBox5_Tick3;
+		
 		private global::Gtk.HBox ZT_SubVBox5_HBox2;
+		
 		private global::Gtk.CheckButton ZT_SubVBox5_Tick4;
+		
 		private global::Gtk.CheckButton ZT_SubVBox5_Tick5;
+		
 		private global::Gtk.VBox ZT_SubVBox6;
+		
 		private global::Gtk.Label ZT_SubVBox6_Label1;
+		
 		private global::Gtk.HBox ZT_SubVBox6_HBox1;
+		
 		private global::Gtk.CheckButton ZT_SubVBox6_Tick1;
+		
 		private global::Gtk.CheckButton ZT_SubVBox6_Tick2;
+		
 		private global::Gtk.CheckButton ZT_SubVBox6_Tick3;
+		
 		private global::Gtk.HBox ZT_SubVBox6_HBox2;
+		
 		private global::Gtk.CheckButton ZT_SubVBox6_Tick4;
+		
 		private global::Gtk.CheckButton ZT_SubVBox6_Tick5;
+		
 		private global::Gtk.Button ZT_SubVBox6_Button1;
+		
 		private global::Gtk.VBox ZT_SubVBox7;
+		
 		private global::Gtk.Label ZT_SubVBox7_Label1;
+		
 		private global::Gtk.Entry ZT_SubVBox7_Entry1;
+		
 		private global::Gtk.VBox ZT_SubVBox8;
+		
 		private global::Gtk.HBox ZT_SubVBox7_HBox1;
+		
 		private global::Gtk.Button ZT_SubVBox8_Button1;
+		
 		private global::Gtk.HSeparator ZT_SubVBox8_Separator1;
+		
 		private global::Gtk.Button ZT_SubVBox8_Button2;
 
 		protected virtual void Build ()
@@ -67,6 +114,7 @@ namespace Zester_Tool
 			this.Resizable = false;
 			this.AllowShrink = true;
 			this.DestroyWithParent = true;
+			this.Gravity = ((global::Gdk.Gravity)(10));
 			// Container child Zester_Tool.NewProjectConfig.Gtk.Container+ContainerChild
 			this.ZT_MainVBox1 = new global::Gtk.VBox ();
 			this.ZT_MainVBox1.Name = "ZT_MainVBox1";
@@ -79,7 +127,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox1_Label1 = new global::Gtk.Label ();
 			this.ZT_SubVBox1_Label1.Name = "ZT_SubVBox1_Label1";
 			this.ZT_SubVBox1_Label1.Xalign = 0.02F;
-			this.ZT_SubVBox1_Label1.LabelProp = global::Mono.Unix.Catalog.GetString ("*Client name: (50 Character limit)");
+			this.ZT_SubVBox1_Label1.LabelProp = global::Mono.Unix.Catalog.GetString ("*Client name:");
 			this.ZT_SubVBox1.Add (this.ZT_SubVBox1_Label1);
 			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox1 [this.ZT_SubVBox1_Label1]));
 			w1.Position = 0;
@@ -90,7 +138,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox1_Entry1.CanFocus = true;
 			this.ZT_SubVBox1_Entry1.Name = "ZT_SubVBox1_Entry1";
 			this.ZT_SubVBox1_Entry1.IsEditable = true;
-			this.ZT_SubVBox1_Entry1.MaxLength = 50;
+			this.ZT_SubVBox1_Entry1.ActivatesDefault = true;
 			this.ZT_SubVBox1_Entry1.InvisibleChar = '●';
 			this.ZT_SubVBox1.Add (this.ZT_SubVBox1_Entry1);
 			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox1 [this.ZT_SubVBox1_Entry1]));
@@ -110,7 +158,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox2_Label1 = new global::Gtk.Label ();
 			this.ZT_SubVBox2_Label1.Name = "ZT_SubVBox2_Label1";
 			this.ZT_SubVBox2_Label1.Xalign = 0.02F;
-			this.ZT_SubVBox2_Label1.LabelProp = global::Mono.Unix.Catalog.GetString ("*Project name: (50 Character limit)");
+			this.ZT_SubVBox2_Label1.LabelProp = global::Mono.Unix.Catalog.GetString ("*Project name:");
 			this.ZT_SubVBox2.Add (this.ZT_SubVBox2_Label1);
 			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox2 [this.ZT_SubVBox2_Label1]));
 			w4.Position = 0;
@@ -121,7 +169,6 @@ namespace Zester_Tool
 			this.ZT_SubVBox2_Entry1.CanFocus = true;
 			this.ZT_SubVBox2_Entry1.Name = "ZT_SubVBox2_Entry1";
 			this.ZT_SubVBox2_Entry1.IsEditable = true;
-			this.ZT_SubVBox2_Entry1.MaxLength = 50;
 			this.ZT_SubVBox2_Entry1.InvisibleChar = '●';
 			this.ZT_SubVBox2.Add (this.ZT_SubVBox2_Entry1);
 			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox2 [this.ZT_SubVBox2_Entry1]));
@@ -282,6 +329,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox5_HBox1.Spacing = 6;
 			// Container child ZT_SubVBox5_HBox1.Gtk.Box+BoxChild
 			this.ZT_SubVBox5_Tick1 = new global::Gtk.CheckButton ();
+			this.ZT_SubVBox5_Tick1.WidthRequest = 200;
 			this.ZT_SubVBox5_Tick1.CanFocus = true;
 			this.ZT_SubVBox5_Tick1.Name = "ZT_SubVBox5_Tick1";
 			this.ZT_SubVBox5_Tick1.Label = global::Mono.Unix.Catalog.GetString ("Scripting / Planning");
@@ -290,8 +338,10 @@ namespace Zester_Tool
 			this.ZT_SubVBox5_HBox1.Add (this.ZT_SubVBox5_Tick1);
 			global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox5_HBox1 [this.ZT_SubVBox5_Tick1]));
 			w22.Position = 0;
+			w22.Expand = false;
 			// Container child ZT_SubVBox5_HBox1.Gtk.Box+BoxChild
 			this.ZT_SubVBox5_Tick2 = new global::Gtk.CheckButton ();
+			this.ZT_SubVBox5_Tick2.WidthRequest = 200;
 			this.ZT_SubVBox5_Tick2.CanFocus = true;
 			this.ZT_SubVBox5_Tick2.Name = "ZT_SubVBox5_Tick2";
 			this.ZT_SubVBox5_Tick2.Label = global::Mono.Unix.Catalog.GetString ("Cross environments");
@@ -300,6 +350,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox5_HBox1.Add (this.ZT_SubVBox5_Tick2);
 			global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox5_HBox1 [this.ZT_SubVBox5_Tick2]));
 			w23.Position = 1;
+			w23.Expand = false;
 			// Container child ZT_SubVBox5_HBox1.Gtk.Box+BoxChild
 			this.ZT_SubVBox5_Tick3 = new global::Gtk.CheckButton ();
 			this.ZT_SubVBox5_Tick3.CanFocus = true;
@@ -321,7 +372,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox5_HBox2.Spacing = 6;
 			// Container child ZT_SubVBox5_HBox2.Gtk.Box+BoxChild
 			this.ZT_SubVBox5_Tick4 = new global::Gtk.CheckButton ();
-			this.ZT_SubVBox5_Tick4.WidthRequest = 202;
+			this.ZT_SubVBox5_Tick4.WidthRequest = 200;
 			this.ZT_SubVBox5_Tick4.CanFocus = true;
 			this.ZT_SubVBox5_Tick4.Name = "ZT_SubVBox5_Tick4";
 			this.ZT_SubVBox5_Tick4.Label = global::Mono.Unix.Catalog.GetString ("Retests / IVs");
@@ -333,6 +384,7 @@ namespace Zester_Tool
 			w26.Expand = false;
 			// Container child ZT_SubVBox5_HBox2.Gtk.Box+BoxChild
 			this.ZT_SubVBox5_Tick5 = new global::Gtk.CheckButton ();
+			this.ZT_SubVBox5_Tick5.WidthRequest = 200;
 			this.ZT_SubVBox5_Tick5.CanFocus = true;
 			this.ZT_SubVBox5_Tick5.Name = "ZT_SubVBox5_Tick5";
 			this.ZT_SubVBox5_Tick5.Label = global::Mono.Unix.Catalog.GetString ("Test support");
@@ -341,6 +393,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox5_HBox2.Add (this.ZT_SubVBox5_Tick5);
 			global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox5_HBox2 [this.ZT_SubVBox5_Tick5]));
 			w27.Position = 1;
+			w27.Expand = false;
 			this.ZT_SubVBox5.Add (this.ZT_SubVBox5_HBox2);
 			global::Gtk.Box.BoxChild w28 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox5 [this.ZT_SubVBox5_HBox2]));
 			w28.Position = 2;
@@ -372,6 +425,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox6_HBox1.Spacing = 6;
 			// Container child ZT_SubVBox6_HBox1.Gtk.Box+BoxChild
 			this.ZT_SubVBox6_Tick1 = new global::Gtk.CheckButton ();
+			this.ZT_SubVBox6_Tick1.WidthRequest = 200;
 			this.ZT_SubVBox6_Tick1.CanFocus = true;
 			this.ZT_SubVBox6_Tick1.Name = "ZT_SubVBox6_Tick1";
 			this.ZT_SubVBox6_Tick1.Label = global::Mono.Unix.Catalog.GetString ("Full scripted plan");
@@ -380,8 +434,10 @@ namespace Zester_Tool
 			this.ZT_SubVBox6_HBox1.Add (this.ZT_SubVBox6_Tick1);
 			global::Gtk.Box.BoxChild w31 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox6_HBox1 [this.ZT_SubVBox6_Tick1]));
 			w31.Position = 0;
+			w31.Expand = false;
 			// Container child ZT_SubVBox6_HBox1.Gtk.Box+BoxChild
 			this.ZT_SubVBox6_Tick2 = new global::Gtk.CheckButton ();
+			this.ZT_SubVBox6_Tick2.WidthRequest = 200;
 			this.ZT_SubVBox6_Tick2.CanFocus = true;
 			this.ZT_SubVBox6_Tick2.Name = "ZT_SubVBox6_Tick2";
 			this.ZT_SubVBox6_Tick2.Label = global::Mono.Unix.Catalog.GetString ("Scripted plan");
@@ -390,6 +446,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox6_HBox1.Add (this.ZT_SubVBox6_Tick2);
 			global::Gtk.Box.BoxChild w32 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox6_HBox1 [this.ZT_SubVBox6_Tick2]));
 			w32.Position = 1;
+			w32.Expand = false;
 			// Container child ZT_SubVBox6_HBox1.Gtk.Box+BoxChild
 			this.ZT_SubVBox6_Tick3 = new global::Gtk.CheckButton ();
 			this.ZT_SubVBox6_Tick3.CanFocus = true;
@@ -411,7 +468,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox6_HBox2.Spacing = 6;
 			// Container child ZT_SubVBox6_HBox2.Gtk.Box+BoxChild
 			this.ZT_SubVBox6_Tick4 = new global::Gtk.CheckButton ();
-			this.ZT_SubVBox6_Tick4.WidthRequest = 106;
+			this.ZT_SubVBox6_Tick4.WidthRequest = 200;
 			this.ZT_SubVBox6_Tick4.CanFocus = true;
 			this.ZT_SubVBox6_Tick4.Name = "ZT_SubVBox6_Tick4";
 			this.ZT_SubVBox6_Tick4.Label = global::Mono.Unix.Catalog.GetString ("Ticket report template");
@@ -420,24 +477,26 @@ namespace Zester_Tool
 			this.ZT_SubVBox6_HBox2.Add (this.ZT_SubVBox6_Tick4);
 			global::Gtk.Box.BoxChild w35 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox6_HBox2 [this.ZT_SubVBox6_Tick4]));
 			w35.Position = 0;
+			w35.Expand = false;
 			// Container child ZT_SubVBox6_HBox2.Gtk.Box+BoxChild
 			this.ZT_SubVBox6_Tick5 = new global::Gtk.CheckButton ();
+			this.ZT_SubVBox6_Tick5.WidthRequest = 200;
 			this.ZT_SubVBox6_Tick5.CanFocus = true;
 			this.ZT_SubVBox6_Tick5.Name = "ZT_SubVBox6_Tick5";
-			this.ZT_SubVBox6_Tick5.Label = global::Mono.Unix.Catalog.GetString ("Folder tree");
+			this.ZT_SubVBox6_Tick5.Label = global::Mono.Unix.Catalog.GetString ("Folder-Tree");
 			this.ZT_SubVBox6_Tick5.DrawIndicator = true;
 			this.ZT_SubVBox6_Tick5.UseUnderline = true;
 			this.ZT_SubVBox6_HBox2.Add (this.ZT_SubVBox6_Tick5);
 			global::Gtk.Box.BoxChild w36 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox6_HBox2 [this.ZT_SubVBox6_Tick5]));
 			w36.Position = 1;
+			w36.Expand = false;
 			// Container child ZT_SubVBox6_HBox2.Gtk.Box+BoxChild
 			this.ZT_SubVBox6_Button1 = new global::Gtk.Button ();
-			this.ZT_SubVBox6_Button1.WidthRequest = 100;
 			this.ZT_SubVBox6_Button1.Sensitive = false;
 			this.ZT_SubVBox6_Button1.CanFocus = true;
 			this.ZT_SubVBox6_Button1.Name = "ZT_SubVBox6_Button1";
 			this.ZT_SubVBox6_Button1.UseUnderline = true;
-			this.ZT_SubVBox6_Button1.Label = global::Mono.Unix.Catalog.GetString ("Folder tree editor");
+			this.ZT_SubVBox6_Button1.Label = global::Mono.Unix.Catalog.GetString ("Folder-Tree Editor");
 			this.ZT_SubVBox6_HBox2.Add (this.ZT_SubVBox6_Button1);
 			global::Gtk.Box.BoxChild w37 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox6_HBox2 [this.ZT_SubVBox6_Button1]));
 			w37.Position = 2;
@@ -460,7 +519,7 @@ namespace Zester_Tool
 			this.ZT_SubVBox7_Label1.HeightRequest = 30;
 			this.ZT_SubVBox7_Label1.Name = "ZT_SubVBox7_Label1";
 			this.ZT_SubVBox7_Label1.Xalign = 0.02F;
-			this.ZT_SubVBox7_Label1.LabelProp = global::Mono.Unix.Catalog.GetString ("*Date Tested (30 Character limit)");
+			this.ZT_SubVBox7_Label1.LabelProp = global::Mono.Unix.Catalog.GetString ("*Date Tested:");
 			this.ZT_SubVBox7.Add (this.ZT_SubVBox7_Label1);
 			global::Gtk.Box.BoxChild w40 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox7 [this.ZT_SubVBox7_Label1]));
 			w40.Position = 0;
@@ -471,7 +530,6 @@ namespace Zester_Tool
 			this.ZT_SubVBox7_Entry1.CanFocus = true;
 			this.ZT_SubVBox7_Entry1.Name = "ZT_SubVBox7_Entry1";
 			this.ZT_SubVBox7_Entry1.IsEditable = true;
-			this.ZT_SubVBox7_Entry1.MaxLength = 30;
 			this.ZT_SubVBox7_Entry1.InvisibleChar = '●';
 			this.ZT_SubVBox7.Add (this.ZT_SubVBox7_Entry1);
 			global::Gtk.Box.BoxChild w41 = ((global::Gtk.Box.BoxChild)(this.ZT_SubVBox7 [this.ZT_SubVBox7_Entry1]));

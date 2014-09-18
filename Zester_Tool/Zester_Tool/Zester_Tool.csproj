@@ -70,6 +70,15 @@
     <Compile Include="gtk-gui\Zester_Tool.NewProjectConfig.cs" />
     <Compile Include="Properties\EnvironmentChooser.cs" />
     <Compile Include="gtk-gui\Zester_Tool.EnvironmentChooser.cs" />
+    <Compile Include="Properties\CreateConfig.cs">
+      <DeployService-Deploy>True</DeployService-Deploy>
+    </Compile>
+    <Compile Include="gtk-gui\Zester_Tool.CreateConfig.cs" />
+    <Compile Include="Properties\SaveDialog.cs" />
+    <Compile Include="gtk-gui\Zester_Tool.SaveDialog.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Properties\Configs\" />
+  </ItemGroup>
 </Project>

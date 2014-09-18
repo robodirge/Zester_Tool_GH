@@ -5,8 +5,8 @@
     <target-gtk-version>2.12</target-gtk-version>
   </configuration>
   <import>
-    <widget-library name="../bin/Debug/Zester_Tool.exe" internal="true" />
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Release/Zester_Tool.exe" internal="true" />
   </import>
   <widget class="Gtk.Window" id="MainMenu" design-size="600 650">
     <property name="MemberName">ZT_MainMenu</property>
@@ -18,6 +18,7 @@
     <property name="Resizable">False</property>
     <property name="AllowShrink">True</property>
     <property name="DestroyWithParent">True</property>
+    <property name="Gravity">Static</property>
     <signal name="DeleteEvent" handler="OnDeleteEvent" />
     <child>
       <widget class="Gtk.VBox" id="ZT_MainVBox1">
@@ -28,32 +29,9 @@
             <property name="MemberName" />
             <property name="Spacing">6</property>
             <child>
-              <widget class="Gtk.Fixed" id="fixed8">
-                <property name="MemberName" />
-                <property name="HeightRequest">60</property>
-                <property name="HasWindow">False</property>
-              </widget>
-              <packing>
-                <property name="Position">0</property>
-                <property name="AutoSize">True</property>
-                <property name="Expand">False</property>
-                <property name="Fill">False</property>
-              </packing>
-            </child>
-            <child>
               <widget class="Gtk.HBox" id="ZT_SVB1_S2_HBox1">
                 <property name="MemberName" />
                 <property name="Spacing">6</property>
-                <child>
-                  <widget class="Gtk.Fixed" id="fixed1">
-                    <property name="MemberName" />
-                    <property name="HasWindow">False</property>
-                  </widget>
-                  <packing>
-                    <property name="Position">0</property>
-                    <property name="AutoSize">True</property>
-                  </packing>
-                </child>
                 <child>
                   <widget class="Gtk.Button" id="ZT_SVB1_S2_Button1">
                     <property name="MemberName" />
@@ -65,41 +43,18 @@
                     <signal name="Clicked" handler="OnZTSVB1S2Button1Clicked" />
                   </widget>
                   <packing>
-                    <property name="Position">1</property>
-                    <property name="AutoSize">True</property>
-                    <property name="Expand">False</property>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">False</property>
                     <property name="Fill">False</property>
                   </packing>
                 </child>
-                <child>
-                  <widget class="Gtk.Fixed" id="fixed2">
-                    <property name="MemberName" />
-                    <property name="HasWindow">False</property>
-                  </widget>
-                  <packing>
-                    <property name="Position">2</property>
-                    <property name="AutoSize">True</property>
-                  </packing>
-                </child>
               </widget>
               <packing>
-                <property name="Position">1</property>
+                <property name="Position">0</property>
                 <property name="AutoSize">True</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
-              </packing>
-            </child>
-            <child>
-              <widget class="Gtk.Fixed" id="fixed11">
-                <property name="MemberName" />
-                <property name="HeightRequest">50</property>
-                <property name="HasWindow">False</property>
-              </widget>
-              <packing>
-                <property name="Position">2</property>
-                <property name="AutoSize">True</property>
-                <property name="Expand">False</property>
-                <property name="Fill">False</property>
+                <property name="Padding">125</property>
               </packing>
             </child>
           </widget>
@@ -115,32 +70,9 @@
             <property name="MemberName" />
             <property name="Spacing">6</property>
             <child>
-              <widget class="Gtk.Fixed" id="fixed9">
-                <property name="MemberName" />
-                <property name="HeightRequest">50</property>
-                <property name="HasWindow">False</property>
-              </widget>
-              <packing>
-                <property name="Position">0</property>
-                <property name="AutoSize">True</property>
-                <property name="Expand">False</property>
-                <property name="Fill">False</property>
-              </packing>
-            </child>
-            <child>
               <widget class="Gtk.HBox" id="ZT_SVB2_S2_HBox1">
                 <property name="MemberName" />
                 <property name="Spacing">6</property>
-                <child>
-                  <widget class="Gtk.Fixed" id="fixed4">
-                    <property name="MemberName" />
-                    <property name="HasWindow">False</property>
-                  </widget>
-                  <packing>
-                    <property name="Position">0</property>
-                    <property name="AutoSize">True</property>
-                  </packing>
-                </child>
                 <child>
                   <widget class="Gtk.Button" id="ZT_SVB2_S2_Button1">
                     <property name="MemberName" />
@@ -152,38 +84,14 @@
                     <property name="UseUnderline">True</property>
                   </widget>
                   <packing>
-                    <property name="Position">1</property>
-                    <property name="AutoSize">True</property>
-                    <property name="Expand">False</property>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">False</property>
                     <property name="Fill">False</property>
                   </packing>
                 </child>
-                <child>
-                  <widget class="Gtk.Fixed" id="fixed5">
-                    <property name="MemberName" />
-                    <property name="HasWindow">False</property>
-                  </widget>
-                  <packing>
-                    <property name="Position">2</property>
-                    <property name="AutoSize">True</property>
-                  </packing>
-                </child>
               </widget>
               <packing>
-                <property name="Position">1</property>
-                <property name="AutoSize">True</property>
-                <property name="Expand">False</property>
-                <property name="Fill">False</property>
-              </packing>
-            </child>
-            <child>
-              <widget class="Gtk.Fixed" id="fixed10">
-                <property name="MemberName" />
-                <property name="HeightRequest">50</property>
-                <property name="HasWindow">False</property>
-              </widget>
-              <packing>
-                <property name="Position">2</property>
+                <property name="Position">0</property>
                 <property name="AutoSize">True</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
@@ -202,32 +110,9 @@
             <property name="MemberName" />
             <property name="Spacing">6</property>
             <child>
-              <widget class="Gtk.Fixed" id="fixed12">
-                <property name="MemberName" />
-                <property name="HeightRequest">50</property>
-                <property name="HasWindow">False</property>
-              </widget>
-              <packing>
-                <property name="Position">0</property>
-                <property name="AutoSize">True</property>
-                <property name="Expand">False</property>
-                <property name="Fill">False</property>
-              </packing>
-            </child>
-            <child>
               <widget class="Gtk.HBox" id="ZT_SVB3_S2_HBox1">
                 <property name="MemberName" />
                 <property name="Spacing">6</property>
-                <child>
-                  <widget class="Gtk.Fixed" id="fixed6">
-                    <property name="MemberName" />
-                    <property name="HasWindow">False</property>
-                  </widget>
-                  <packing>
-                    <property name="Position">0</property>
-                    <property name="AutoSize">True</property>
-                  </packing>
-                </child>
                 <child>
                   <widget class="Gtk.Button" id="ZT_SVB3_S2_Button1">
                     <property name="MemberName" />
@@ -239,41 +124,18 @@
                     <property name="UseUnderline">True</property>
                   </widget>
                   <packing>
-                    <property name="Position">1</property>
-                    <property name="AutoSize">True</property>
-                    <property name="Expand">False</property>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">False</property>
                     <property name="Fill">False</property>
                   </packing>
                 </child>
-                <child>
-                  <widget class="Gtk.Fixed" id="fixed7">
-                    <property name="MemberName" />
-                    <property name="HasWindow">False</property>
-                  </widget>
-                  <packing>
-                    <property name="Position">2</property>
-                    <property name="AutoSize">True</property>
-                  </packing>
-                </child>
               </widget>
               <packing>
-                <property name="Position">1</property>
+                <property name="Position">0</property>
                 <property name="AutoSize">True</property>
                 <property name="Expand">False</property>
                 <property name="Fill">False</property>
-              </packing>
-            </child>
-            <child>
-              <widget class="Gtk.Fixed" id="fixed13">
-                <property name="MemberName" />
-                <property name="HeightRequest">60</property>
-                <property name="HasWindow">False</property>
-              </widget>
-              <packing>
-                <property name="Position">2</property>
-                <property name="AutoSize">True</property>
-                <property name="Expand">False</property>
-                <property name="Fill">False</property>
+                <property name="Padding">125</property>
               </packing>
             </child>
           </widget>
@@ -298,6 +160,7 @@
     <property name="Resizable">False</property>
     <property name="AllowShrink">True</property>
     <property name="DestroyWithParent">True</property>
+    <property name="Gravity">Static</property>
     <signal name="DeleteEvent" handler="OnDeleteEvent" />
     <child>
       <widget class="Gtk.VBox" id="ZT_MainVBox1">
@@ -311,7 +174,7 @@
               <widget class="Gtk.Label" id="ZT_SubVBox1_Label1">
                 <property name="MemberName" />
                 <property name="Xalign">0.02</property>
-                <property name="LabelProp" translatable="yes">*Client name: (50 Character limit)</property>
+                <property name="LabelProp" translatable="yes">*Client name:</property>
               </widget>
               <packing>
                 <property name="Position">0</property>
@@ -325,7 +188,7 @@
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="IsEditable">True</property>
-                <property name="MaxLength">50</property>
+                <property name="ActivatesDefault">True</property>
                 <property name="InvisibleChar">●</property>
               </widget>
               <packing>
@@ -351,7 +214,7 @@
               <widget class="Gtk.Label" id="ZT_SubVBox2_Label1">
                 <property name="MemberName" />
                 <property name="Xalign">0.02</property>
-                <property name="LabelProp" translatable="yes">*Project name: (50 Character limit)</property>
+                <property name="LabelProp" translatable="yes">*Project name:</property>
               </widget>
               <packing>
                 <property name="Position">0</property>
@@ -365,7 +228,6 @@
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="IsEditable">True</property>
-                <property name="MaxLength">50</property>
                 <property name="InvisibleChar">●</property>
               </widget>
               <packing>
@@ -410,7 +272,6 @@
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
                     <property name="Label" translatable="yes">Yes</property>
-                    <property name="Active">True</property>
                     <property name="DrawIndicator">True</property>
                     <property name="HasLabel">True</property>
                     <property name="UseUnderline">True</property>
@@ -502,7 +363,6 @@
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
                     <property name="Label" translatable="yes">Yes</property>
-                    <property name="Active">True</property>
                     <property name="DrawIndicator">True</property>
                     <property name="HasLabel">True</property>
                     <property name="UseUnderline">True</property>
@@ -592,6 +452,7 @@
                 <child>
                   <widget class="Gtk.CheckButton" id="ZT_SubVBox5_Tick1">
                     <property name="MemberName" />
+                    <property name="WidthRequest">200</property>
                     <property name="CanFocus">True</property>
                     <property name="Label" translatable="yes">Scripting / Planning</property>
                     <property name="DrawIndicator">True</property>
@@ -600,12 +461,14 @@
                   </widget>
                   <packing>
                     <property name="Position">0</property>
-                    <property name="AutoSize">True</property>
+                    <property name="AutoSize">False</property>
+                    <property name="Expand">False</property>
                   </packing>
                 </child>
                 <child>
                   <widget class="Gtk.CheckButton" id="ZT_SubVBox5_Tick2">
                     <property name="MemberName" />
+                    <property name="WidthRequest">200</property>
                     <property name="CanFocus">True</property>
                     <property name="Label" translatable="yes">Cross environments</property>
                     <property name="DrawIndicator">True</property>
@@ -614,7 +477,8 @@
                   </widget>
                   <packing>
                     <property name="Position">1</property>
-                    <property name="AutoSize">True</property>
+                    <property name="AutoSize">False</property>
+                    <property name="Expand">False</property>
                   </packing>
                 </child>
                 <child>
@@ -646,7 +510,7 @@
                 <child>
                   <widget class="Gtk.CheckButton" id="ZT_SubVBox5_Tick4">
                     <property name="MemberName" />
-                    <property name="WidthRequest">202</property>
+                    <property name="WidthRequest">200</property>
                     <property name="CanFocus">True</property>
                     <property name="Label" translatable="yes">Retests / IVs</property>
                     <property name="DrawIndicator">True</property>
@@ -662,6 +526,7 @@
                 <child>
                   <widget class="Gtk.CheckButton" id="ZT_SubVBox5_Tick5">
                     <property name="MemberName" />
+                    <property name="WidthRequest">200</property>
                     <property name="CanFocus">True</property>
                     <property name="Label" translatable="yes">Test support</property>
                     <property name="DrawIndicator">True</property>
@@ -670,7 +535,8 @@
                   </widget>
                   <packing>
                     <property name="Position">1</property>
-                    <property name="AutoSize">True</property>
+                    <property name="AutoSize">False</property>
+                    <property name="Expand">False</property>
                   </packing>
                 </child>
               </widget>
@@ -714,6 +580,7 @@
                 <child>
                   <widget class="Gtk.CheckButton" id="ZT_SubVBox6_Tick1">
                     <property name="MemberName" />
+                    <property name="WidthRequest">200</property>
                     <property name="CanFocus">True</property>
                     <property name="Label" translatable="yes">Full scripted plan</property>
                     <property name="DrawIndicator">True</property>
@@ -722,12 +589,14 @@
                   </widget>
                   <packing>
                     <property name="Position">0</property>
-                    <property name="AutoSize">True</property>
+                    <property name="AutoSize">False</property>
+                    <property name="Expand">False</property>
                   </packing>
                 </child>
                 <child>
                   <widget class="Gtk.CheckButton" id="ZT_SubVBox6_Tick2">
                     <property name="MemberName" />
+                    <property name="WidthRequest">200</property>
                     <property name="CanFocus">True</property>
                     <property name="Label" translatable="yes">Scripted plan</property>
                     <property name="DrawIndicator">True</property>
@@ -736,7 +605,8 @@
                   </widget>
                   <packing>
                     <property name="Position">1</property>
-                    <property name="AutoSize">True</property>
+                    <property name="AutoSize">False</property>
+                    <property name="Expand">False</property>
                   </packing>
                 </child>
                 <child>
@@ -768,7 +638,7 @@
                 <child>
                   <widget class="Gtk.CheckButton" id="ZT_SubVBox6_Tick4">
                     <property name="MemberName" />
-                    <property name="WidthRequest">106</property>
+                    <property name="WidthRequest">200</property>
                     <property name="CanFocus">True</property>
                     <property name="Label" translatable="yes">Ticket report template</property>
                     <property name="DrawIndicator">True</property>
@@ -777,31 +647,33 @@
                   </widget>
                   <packing>
                     <property name="Position">0</property>
-                    <property name="AutoSize">True</property>
+                    <property name="AutoSize">False</property>
+                    <property name="Expand">False</property>
                   </packing>
                 </child>
                 <child>
                   <widget class="Gtk.CheckButton" id="ZT_SubVBox6_Tick5">
                     <property name="MemberName" />
+                    <property name="WidthRequest">200</property>
                     <property name="CanFocus">True</property>
-                    <property name="Label" translatable="yes">Folder tree</property>
+                    <property name="Label" translatable="yes">Folder-Tree</property>
                     <property name="DrawIndicator">True</property>
                     <property name="HasLabel">True</property>
                     <property name="UseUnderline">True</property>
                   </widget>
                   <packing>
                     <property name="Position">1</property>
-                    <property name="AutoSize">True</property>
+                    <property name="AutoSize">False</property>
+                    <property name="Expand">False</property>
                   </packing>
                 </child>
                 <child>
                   <widget class="Gtk.Button" id="ZT_SubVBox6_Button1">
                     <property name="MemberName" />
-                    <property name="WidthRequest">100</property>
                     <property name="Sensitive">False</property>
                     <property name="CanFocus">True</property>
                     <property name="Type">TextOnly</property>
-                    <property name="Label" translatable="yes">Folder tree editor</property>
+                    <property name="Label" translatable="yes">Folder-Tree Editor</property>
                     <property name="UseUnderline">True</property>
                   </widget>
                   <packing>
@@ -834,7 +706,7 @@
                 <property name="MemberName" />
                 <property name="HeightRequest">30</property>
                 <property name="Xalign">0.02</property>
-                <property name="LabelProp" translatable="yes">*Date Tested (30 Character limit)</property>
+                <property name="LabelProp" translatable="yes">*Date Tested:</property>
               </widget>
               <packing>
                 <property name="Position">0</property>
@@ -848,7 +720,6 @@
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="IsEditable">True</property>
-                <property name="MaxLength">30</property>
                 <property name="InvisibleChar">●</property>
               </widget>
               <packing>
@@ -946,6 +817,7 @@
     <property name="Resizable">False</property>
     <property name="AllowShrink">True</property>
     <property name="DestroyWithParent">True</property>
+    <property name="Gravity">Static</property>
     <signal name="DeleteEvent" handler="OnDeleteEvent" />
     <child>
       <widget class="Gtk.VBox" id="ZT_VBox1">
@@ -1057,6 +929,253 @@
           </packing>
         </child>
       </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Zester_Tool.CreateConfig" design-size="600 650">
+    <property name="MemberName">ZT_CreateConfig</property>
+    <property name="WidthRequest">600</property>
+    <property name="HeightRequest">650</property>
+    <property name="Title" translatable="yes">Zester Tool : Create Config</property>
+    <property name="Icon">stock:gtk-preferences Menu</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="Resizable">False</property>
+    <property name="AllowShrink">True</property>
+    <property name="DestroyWithParent">True</property>
+    <property name="Gravity">Static</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.VBox" id="ZT_MainVBox1">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <property name="BorderWidth">5</property>
+        <child>
+          <widget class="Gtk.VBox" id="ZT_SubVBox1">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.HBox" id="ZT_SubVBox1_HBox1">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.Label" id="ZT_SubVBox1_Label1">
+                    <property name="MemberName" />
+                    <property name="Xalign">0.02</property>
+                    <property name="LabelProp" translatable="yes">Config save location:</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="ZT_SubVBox1_Button1">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Edit Save Location</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="OnZTSubVBox1Button1Clicked" />
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">False</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ScrolledWindow" id="ZT_SubVBox1_Scrolled1">
+                <property name="MemberName" />
+                <property name="HeightRequest">100</property>
+                <property name="HscrollbarPolicy">Never</property>
+                <property name="ShadowType">In</property>
+                <child>
+                  <widget class="Gtk.TextView" id="ZT_SubVBox1_TextView1">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="ShowScrollbars">True</property>
+                    <property name="Editable">False</property>
+                    <property name="CursorVisible">False</property>
+                    <property name="AcceptsTab">False</property>
+                    <property name="Text" translatable="yes" />
+                    <property name="WrapMode">Char</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">False</property>
+                <property name="Expand">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">False</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.VBox" id="ZT_SubVBox2">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Label" id="ZT_SubVBox2_Label1">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Template style:</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.HBox" id="ZT_SubVBox2_HBox1">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.RadioButton" id="ZT_SubVBox2_Radio1">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Label" translatable="yes">Normal</property>
+                    <property name="DrawIndicator">True</property>
+                    <property name="HasLabel">True</property>
+                    <property name="UseUnderline">True</property>
+                    <property name="Group">group1</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.RadioButton" id="ZT_SubVBox2_Radio2">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Label" translatable="yes">Scripting / Planing</property>
+                    <property name="DrawIndicator">True</property>
+                    <property name="HasLabel">True</property>
+                    <property name="UseUnderline">True</property>
+                    <property name="Group">group1</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.VBox" id="ZT_SubVBox3">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Fixed" id="ZT_SubVBox3_Space1">
+                <property name="MemberName" />
+                <property name="HeightRequest">390</property>
+                <property name="HasWindow">False</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.HBox" id="ZT_SubVBox2_HBox2">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.Button" id="ZT_SubVBox3_Button1">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">100</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Main Menu</property>
+                    <property name="UseUnderline">True</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.HSeparator" id="ZT_SubVBox3_Separator1">
+                    <property name="MemberName" />
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">True</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="ZT_SubVBox3_Button2">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">100</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Next</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="OnZTSubVBox3Button2Clicked" />
+                  </widget>
+                  <packing>
+                    <property name="Position">2</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Zester_Tool.SaveDialog" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">SaveDialog</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <placeholder />
     </child>
   </widget>
 </stetic-interface>

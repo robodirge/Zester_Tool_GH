@@ -5,13 +5,21 @@ namespace Zester_Tool
 	public partial class EnvironmentChooser
 	{
 		private global::Gtk.VBox ZT_VBox1;
+		
 		private global::Gtk.Entry entry1;
+		
 		private global::Gtk.HBox ZT_SubBox1_HBox1;
+		
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
+		
 		private global::Gtk.TreeView EnvironTree_Main;
+		
 		private global::Gtk.VBox ZT_SubBox1a_VBox1;
+		
 		private global::Gtk.Button button1;
+		
 		private global::Gtk.Label label1;
+		
 		private global::Gtk.Fixed fixed2;
 
 		protected virtual void Build ()
@@ -27,6 +35,7 @@ namespace Zester_Tool
 			this.Resizable = false;
 			this.AllowShrink = true;
 			this.DestroyWithParent = true;
+			this.Gravity = ((global::Gdk.Gravity)(10));
 			// Container child Zester_Tool.EnvironmentChooser.Gtk.Container+ContainerChild
 			this.ZT_VBox1 = new global::Gtk.VBox ();
 			this.ZT_VBox1.Name = "ZT_VBox1";

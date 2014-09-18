@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Text.RegularExpressions;
 using Gtk;
 
 namespace Zester_Tool{
@@ -49,10 +51,10 @@ namespace Zester_Tool{
 			
 		public void OnLoadActions(){
 			//Section 1
-			ZT_SubVBox1_Entry1.Text = sClientName;
+			//ZT_SubVBox1_Entry1.Text = sClientName;
 
 			//Section 2
-			ZT_SubVBox2_Entry1.Text = sProjectName;
+			//ZT_SubVBox2_Entry1.Text = sProjectName;
 
 			//Section 3
 			ZT_SubVBox3_Radio2.Active = true;
@@ -140,6 +142,25 @@ namespace Zester_Tool{
 
 		//Next button
 		protected void OnZTSubVBox8Button2Clicked (object sender, EventArgs e){
+
+			string temp; 
+
+			temp = ZT_SubVBox1_Entry1.Text;
+			ZT_SubVBox1_Entry1.Text = temp.Trim();
+
+			temp = ZT_SubVBox2_Entry1.Text;
+			ZT_SubVBox2_Entry1.Text = temp.Trim();
+
+			temp = ZT_SubVBox3_TextView1.Buffer.Text;
+			ZT_SubVBox3_TextView1.Buffer.Text = temp.Trim();
+
+			temp = ZT_SubVBox4_TextView1.Buffer.Text;
+			ZT_SubVBox4_TextView1.Buffer.Text = temp.Trim();
+
+			temp = ZT_SubVBox7_Entry1.Text;
+			ZT_SubVBox7_Entry1.Text = temp.Trim();
+
+
 			if(ZT_SubVBox1_Entry1.Text == ""){
 				sErrorLog += ("Client name is missing.\r\n");
 				iErrorLog++;
@@ -194,12 +215,43 @@ namespace Zester_Tool{
 			}
 
 			if(bNextSection){
+				string[] aContentArray;
+				aContentArray = new string[5];
 
-				//Save data to config file
+				aContentArray[0] = ZT_SubVBox1_Entry1.Text;
+				aContentArray[1] = ZT_SubVBox2_Entry1.Text;
+				if(ZT_SubVBox3_Radio1.Active == true)
+					aContentArray[2] = ZT_SubVBox3_TextView1.Buffer.Text;
+				else
+					aContentArray[2] = "N/A";
+				if(ZT_SubVBox4_Radio1.Active == true)
+					aContentArray[3] = ZT_SubVBox4_TextView1.Buffer.Text;
+				else
+					aContentArray[3] = "N/A";
+				aContentArray[4] = sDateTested;
 
-				Destroy();
-				Zester_Tool.EnvironmentChooser EC = new Zester_Tool.EnvironmentChooser();
-				EC.Show ();
+				bool[] aTaskArray;
+				aTaskArray = new bool[5];
+
+				aTaskArray[0] = ZT_SubVBox5_Tick1.Active;
+				aTaskArray[1] = ZT_SubVBox5_Tick2.Active;
+				aTaskArray[2] = ZT_SubVBox5_Tick3.Active;
+				aTaskArray[3] = ZT_SubVBox5_Tick4.Active;
+				aTaskArray[4] = ZT_SubVBox5_Tick5.Active;
+
+				bool[] aOpArray;
+				aOpArray = new bool[5];
+
+				aOpArray[0] = ZT_SubVBox6_Tick1.Active;
+				aOpArray[1] = ZT_SubVBox6_Tick2.Active;
+				aOpArray[2] = ZT_SubVBox6_Tick3.Active;
+				aOpArray[3] = ZT_SubVBox6_Tick4.Active;
+				aOpArray[4] = ZT_SubVBox6_Tick5.Active;
+
+				Destroy(); //Kill window
+				Zester_Tool.CreateConfig NC = new Zester_Tool.CreateConfig(aContentArray, aTaskArray, aOpArray);
+				//Zester_Tool.EnvironmentChooser EC = new Zester_Tool.EnvironmentChooser();
+				NC.Show (); //Show window
 			}
 			//Launch environment chooser section
 		}
